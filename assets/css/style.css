@@ -1,9 +1,10 @@
 body {
-	font-family: 'Share Tech Mono', Arial, Helvetica, sans-serif;
+	font-family: 'Niconne', cursive;
 	background-image: url(../images/game-background.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-attachment: fixed;
+	font-size: 100%;
 }
 
 img {
@@ -74,6 +75,6 @@ color: white;}
 
 #game-message, #attack-message, #defense-message {
 	color: white;
-	font-family: 'Share Tech Mono', Arial, Helvetica, sans-serif;
+	font-family: 'Niconne', cursive;
 	font-size: 200%;
 }
