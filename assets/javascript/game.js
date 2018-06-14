@@ -52,7 +52,7 @@ function resetGameStatus() {
 function createDragDiv (dragon, key) {
     var dragDiv = $("<div class='dragon' data-name='" + key + "'>")
     var dragName = $("<div class='dragon-name'>").text(dragon.name)
-    var dragImage = $("<img alt='image' class='dragon-image'>").attr('src', dragon.imageUrl)
+    var dragImage = $("<img alt='dragon' class='dragon-image'>").attr('src', dragon.imageUrl)
     var dragHealth = $("<div class='dragon-health'>").text(dragon.health)
     dragDiv.append(dragName).append(dragImage).append(dragHealth)
     return dragDiv
