@@ -1,5 +1,5 @@
 body {
-	font-family: 'Niconne', cursive;
+	font-family: 'Berkshire Swash', cursive;
 	background-image: url(../images/game-background.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
@@ -75,6 +75,6 @@ color: white;}
 
 #game-message, #attack-message, #defense-message {
 	color: white;
-	font-family: 'Niconne', cursive;
+	font-family: 'Berkshire Swash', cursive;
 	font-size: 200%;
 }
