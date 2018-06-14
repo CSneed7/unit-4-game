@@ -23,16 +23,15 @@ color: white;}
 .dragon {
 	display: inline-block;
 	border-style: solid;
+	border-radius: 12px;
 	border-color: purple;
 	border-width: 2px;
 	cursor: pointer;
-	background-color: green;
+	background-color: white;
 }
 .dragon-image {
-	padding-right: 16px;
-	padding-left: 16px;
-	margin-top: 3px;
-	margin-bottom: 3px;
+	height: 100px;
+	width: 150px;
 }
 .dragon-name { text-align: center; }
 .dragon-health {	text-align: center; }
