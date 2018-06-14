@@ -27,7 +27,7 @@ function resetDragons() {
             name: 'Earth Dragon',
             health: 210,
             attack: 5,
-            imageUrl: 'assets/images/earth-dragons.png',
+            imageUrl: 'assets/images/earth-dragon.png',
             counterStrike: 10
         },
         'lightningDragon': {
