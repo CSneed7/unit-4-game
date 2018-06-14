@@ -100,11 +100,13 @@ function enableEnemyPick() {
 function attack (numAttacks) {
     console.log('attacking defender')
     gameStatus.selectedDefender.health -= gameStatus.selectedDragon.attack * numAttacks
+    document.getElementById('attack-message').innerHTML = "Your " + gameStatus.selectedDragon.name + " did " + gameStatus.selectedDragon.attack * numAttacks;
 }
 
 function defend() {
     console.log('defender countering')
     gameStatus.selectedDragon.health -= gameStatus.selectedDefender.counterStrike
+    document.getElementById('defense-message').innerHTML = "The " + gameStatus.selectedDefender.name + " did " + gameStatus.selectedDefender.counterStrike;
 }
 
 function dragDeath (dragon) {
@@ -119,7 +121,7 @@ function gameWon() {
 
 function attackPhase() {
     if (dragDeath(gameStatus.selectedDragon)) {
-        alert('You were slain by the ' + gameStatus.selectedDefender.name + '. Click reset to play again.')
+        document.getElementById('game-message').innerHTML = "You were slain by the " + gameStatus.selectedDefender.name + ". Click reset to play again.";
 
         $('selected-dragon').empty()
         $('#reset-button').show()
@@ -133,11 +135,11 @@ function attackPhase() {
         $('#defender').empty()
 
         if (gameWon()) {
-            alert('You won! Click reset to play again')
+            document.getElementById('game-message').innerHTML = "You won! Click reset to play again.";
             $('#reset-button').show()
         }
         else {
-            alert('You slayed the ' + gameStatus.selectedDefender.name + '! Select another Dragon to fight.')
+            document.getElementById('game-message').innerHTML = "You slayed the " + gameStatus.selectedDefender.name + "! Select another Dragon to fight.";
             enableEnemyPick();
         }
         return true
@@ -151,6 +153,9 @@ function emptyDivs() {
     $('#available-to-attack-section .enemy').empty();
     $('#dragon-area').empty();
     $('#dragons-section').show();
+    $('#game-message').empty();
+    $('#attack-message').empty();
+    $('#defense-message').empty();
 }
 
 $(document).ready(function () {
