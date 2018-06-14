@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Dragon RPG!</title>
+    
+    <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet" type="text/css">
+    
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+  </head>
+
+  <body>
+
+    <div class="main-section-title">Dragon RPG</div>
+    <div id="main-game-section">
+      
+      <div id="dragons-section">
+        <div class="section-title">Select Your Dragon for Battle!</div>
+        <div id="dragon-area"></div>
+      </div>
+
+      
+      <div id="selected-dragon-section">
+        <div class="section-title">Your Dragon!</div>
+        
+        <div id="selected-dragon"></div>
+      </div>
+
+      
+      <div id="available-to-attack-selection">
+        <div class="section-title">Pick a Dragon To Attack</div>
+      </div>
+
+      <div class="section-title">Chosen Dragon to Fight</div>
+      <div id="fight-section">
+        <button id="attack-button" style="display: none;">Attack</button>
+      </div>
+
+      <div id="action">
+        <div class="dragon-section">
+          <div class="section-title">Defending Dragon</div>
+         
+          <div id="defender"></div>
+        </div>
+      </div>
+
+    </div>
+    <!-- Area for game messages. -->
+    <div id="game-message"></div>
+    <button id="reset-button" style="display: none;">Reset Game</button>
+
+  </body>
+
+</html>
