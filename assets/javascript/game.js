@@ -34,7 +34,7 @@ function resetDragons() {
             name: 'Lightning Dragon',
             health: 120,
             attack: 15,
-            imageUrl: 'assets/images/lightning-dragons.jpg',
+            imageUrl: 'assets/images/lightning-dragon.jpg',
             counterStrike: 25
         },
     }
