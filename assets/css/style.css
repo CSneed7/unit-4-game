@@ -75,7 +75,6 @@ color: white;}
 
 #game-message, #attack-message, #defense-message {
 	color: white;
-	font-weight: bold;
 	font-family: 'Share Tech Mono', Arial, Helvetica, sans-serif;
 	font-size: 200%;
 }
