@@ -20,7 +20,7 @@ function resetDragons() {
             name: 'Water Dragon',
             health: 160,
             attack: 10,
-            imageUrl: 'assets/images/water-dragon.jpg',
+            imageUrl: 'assets/images/water-dragons.jpg',
             counterStrike: 8
         },
         'earthDragon': {
