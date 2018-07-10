@@ -3,6 +3,7 @@ body {
 	background-image: url(../images/game-background.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
+	background-size: 100%;
 	background-attachment: fixed;
 	font-size: 100%;
 }
